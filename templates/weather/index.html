@@ -22,9 +22,9 @@
                     {%csrf_token%}
                     <label for = "city">Город</label>
                     {{ form.name }}
-                    <input type="submit" name="send" value="Узнать" class="mt-2 btn btn-danger">
-                    <input type="button" name="delete_one" value="Удалить город" class="mt-2 btn btn-dark">
-                    <input type="button" name="delete_all" value="Удалить все города" class="mt-2 btn btn-outline-dark">
+                    <label for = "city">Действия</label>
+                    {{ form.actions }}
+                    <input type="submit" name="send" value="Выполнить" class="mt-2 btn btn-danger">
                 </form>
             </div>
 
